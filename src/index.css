@@ -1,13 +1,311 @@
+/*----Impostazioni generali-----*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Ubuntu', sans-serif !important;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.myBgColor {
+  background-color: #212529;
+}
+.myTextColor {
+  color: #ffffff !important;
+}
+.text-justify {
+  text-align: justify;
+}
+.myButtonStyle{
+  background: #437C90 !important;
+  color: #ffffff !important;
+  border-radius: 10px !important;
+  padding: 8px 15px !important;
+}
+.myBgButton {
+  background: #437C90 !important;
+}
+.myLinkStyle {
+  text-decoration: none !important;
+  box-shadow: inset 0 -2px 0 0 #ECD06F;
+  transition: 0.3s;
+  color: #fff;
+}
+.myLinkStyle:hover {
+  text-decoration: none !important;
+  box-shadow: inset 0 -25px 0 0 #ECD06F;
+  transition: 0.3s;
+  color: #212529 !important;
+}
+.myLinkIcon svg {
+  transition: 0.3s;
+  color: #fff;
+}
+.myLinkIcon:hover svg {
+  transition: 0.3s;
+  color: #ECD06F;
+  transform: scale(1.1);
+}
+.castom-h {
+  border-bottom: 3px solid #ECD06F;
+  display: inline;
+}
+section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+@media (min-width: 1440px) {
+  .container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl, .container-fluid {
+      max-width: 1400px !important;
+  }
+}
+/*----Header----*/
+.headerSection {
+  padding-top: 150px;
+  min-height: 100vh;
+  color: #ffffff;
+  position: relative;
+}
+.headerSection h1, .headerSection h2 {
+  cursor: pointer;
+}
+.headerSection h1 span, .headerSection h2 span {
+  color: rgb(255 255 255 / 30%);
+}
+.backgroundImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1s !important;
+  z-index: 0;
+}
+.title1 { background-image: url('./images/dev1.png'); }
+.title2 { background-image: url('./images/dev2.png'); }
+.title3 { background-image: url('./images/dev3.jpg'); }
+.backgroundImage.visible {
+  opacity: 1;
+}
+.header-overlay-section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #212529;
+  opacity: 0.8;
+  z-index: 1;
+  transition: all 1s !important;
+}
+/*----About----*/
+.about-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.box {
+  width: 60vmin;
+  height: 60vmin;
+  position: relative;
+}
+.box:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 50%;
+  transform: scale(1.42);
+}
+.spin-container {
+  width: 100%;
+  height: 100%;
+  animation: spin 12s ease-in-out infinite alternate;
+  position: relative;
+}
+.shape {
+  width: 100%;
+  height: 100%;
+  transition: border-radius 1s ease-out;
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  animation: morph 8s ease-in-out infinite both alternate;
+  position: absolute;
+  overflow: hidden;
+  z-index: 5;
+  background: #ECD06F;
+}
+.bd {
+  width: 142%;
+  height: 142%;
+  position: absolute;
+  left: -21%;
+  top: -21%;
+  background: url(./images/GiuseppeRinaldi.png);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  color: #003;
+  font-size: 5vw;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  animation: spin 12s ease-in-out infinite alternate-reverse;
+  opacity: 1;
+  z-index: 2;
+}
+@-webkit-keyframes morph {
+  0% {
+    border-radius: 40% 60% 60% 40%/60% 30% 70% 40%;
+  }
+  100% {
+    border-radius: 40% 60%;
+  }
+}
+@keyframes morph {
+  0% {
+    border-radius: 40% 60% 60% 40%/60% 30% 70% 40%;
+  }
+  100% {
+    border-radius: 40% 60%;
+  }
+}
+@-webkit-keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+@media (max-width: 767px) {
+  .about-container {
+    height: 50vh;
+  }
+}
+/*----Skills----*/
+.skillsSection .card {
+  aspect-ratio: 1 / 1;
+}
+.skillsSection .card:hover svg {
+  transform: scale(1.4);
+  transition: all 0.5s;
+}
+.skillsSection svg {
+  transition: all 0.5s;
+  height: 50px;
+  width: 50px;
+}
+@media (min-width: 992px) {
+  .skillsSection svg {
+    height: 80px;
+    width: 80px;
+  }
+}
+/*----Studies----*/
+.sgd, .epicode {
+  position: relative;
+  border: 1px solid #212529;
+}
+.sgd::before, .epicode::before,
+.sgd::after, .epicode::after {
+  content: '';
+  position: absolute;
+  background: #437C90;
+}
+.sgd::before {
+  width: 100px;
+  top: 0;
+  left: 0;
+  height: 3px;
+}
+.sgd::after {
+  height: 50px;
+  top: 0;
+  left: 0;
+  width: 3px;
+}
+.epicode::before {
+  width: 100px;
+  bottom: 0;
+  right: 0;
+  height: 3px;
+}
+.epicode::after {
+  height: 50px;
+  bottom: 0;
+  right: 0;
+  width: 3px;
+}
+/*----GetinTouch----*/
+.formSection {
+  min-height: 50vh;
+  position: relative;
+}
+#matrixVideo {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  object-fit: cover;
+  object-position: bottom;
+}
+.form-container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media (min-width: 992px) {
+  .form-container {
+    width: 800px;
+  }
+}
+@media (max-width: 991px) {
+  .form-container button {
+    width: 100%;
+  }
+}
+/*----Projects----*/
+.capovillaContainer {
+  margin-bottom: -40px;
+  margin-left: 40px;
+}
+.donatoContainer {
+  margin-right: 40px;
+}
+.capovillaContainer img, .donatoContainer img {
+  transition: all 0.5s;
+}
+.capovillaContainer a:hover img, 
+.donatoContainer a:hover img {
+  transform: scale(1.2);
+}
+/*----Footer----*/
+#footer {
+  background-color: #437C90;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#footer p {
+  margin-bottom: 0;
+}
+#footer .mobileViewportIcon {
+  justify-content: end;
+}
+@media (max-width: 767px) {
+  .mobileViewport, .mobileViewportIcon {
+    justify-content: center !important;
+    text-align: center;
+  }
 }
