@@ -17,7 +17,7 @@ function GetinTouch() {
 
     return (
         <section id="get-in-touch" className="formSection d-flex align-items-center">
-            <video autoPlay muted loop id="matrixVideo">
+            <video autoPlay muted loop id="matrixVideo" >
                 <source src={matrix} type="video/mp4" />
             </video>
             <div className="form-container z-1">

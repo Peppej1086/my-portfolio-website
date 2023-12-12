@@ -209,6 +209,11 @@ section {
     width: 80px;
   }
 }
+@media (max-width: 767px) {
+  .skillsSection .first-justify-p {
+    margin-bottom: 0;
+  }
+}
 /*----Studies----*/
 .sgd, .epicode {
   position: relative;
