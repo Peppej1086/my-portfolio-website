@@ -59,14 +59,17 @@ section {
 .headerSection {
   padding-top: 150px;
   min-height: 100vh;
-  color: #ffffff;
+  color: rgb(255 255 255 / 30%);
   position: relative;
 }
-.headerSection h1, .headerSection h2 {
-  cursor: pointer;
-}
 .headerSection h1 span, .headerSection h2 span {
-  color: rgb(255 255 255 / 30%);
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.headerSection h1 span:hover, .headerSection h2 span:hover {
+  transform: scale(1.5) !important;
+  transition: all 0.5s;
 }
 .backgroundImage {
   position: absolute;
@@ -188,6 +191,9 @@ section {
 @media (max-width: 767px) {
   .about-container {
     height: 50vh;
+  }
+  .AboutIconsContainer {
+    justify-content: center !important;
   }
 }
 /*----Skills----*/

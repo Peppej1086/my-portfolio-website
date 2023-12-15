@@ -14,7 +14,7 @@ function Studies() {
                         </div>
                         <div className="epicode my-4 text-center p-2">
                             <p className="mb-1">March 2021 - June 2021</p>
-                            <h4>Epicode School<br/>Rome</h4>
+                            <h4 className="mb-0">Epicode School<br/>Rome</h4>
                         </div>
                     </div>
                     <div className="col-12 col-md">

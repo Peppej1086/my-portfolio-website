@@ -3,21 +3,15 @@ import navImg from "../images/iconWhite.png";
 
 function Navbar() {
     const [bgClass, setBgClass] = useState('bg-transparent');
-
     useEffect(() => {
         const handleScroll = () => {
-            // Controlla la posizione dello scroll e aggiorna la classe di background
             if (window.scrollY >= 100) {
                 setBgClass('myBgColor');
             } else {
                 setBgClass('bg-transparent');
             }
         };
-
-        // Aggiungi l'event listener
         window.addEventListener('scroll', handleScroll);
-
-        // Rimuovi l'event listener quando il componente viene smontato
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
@@ -40,19 +34,19 @@ function Navbar() {
                     <div className="offcanvas-body">
                         <ul className="navbar-nav justify-content-end flex-grow-1">
                             <li className="nav-item pe-2">
-                                <a className="nav-link myTextColor" href="#about">About</a>
+                                <button className='bg-transparent border-0 p-0' data-bs-dismiss="offcanvas"><a className="nav-link myTextColor" href="#about">About</a></button>
                             </li>
                             <li className="nav-item pe-2">
-                                <a className="nav-link myTextColor" href="#technology-skills">Technology & Skills</a>
+                            <button className='bg-transparent border-0 p-0' data-bs-dismiss="offcanvas"><a className="nav-link myTextColor" href="#technology-skills">Technology & Skills</a></button>
                             </li>
                             <li className="nav-item pe-2">
-                                <a className="nav-link myTextColor" href="#studies">Studies</a>
+                            <button className='bg-transparent border-0 p-0' data-bs-dismiss="offcanvas"><a className="nav-link myTextColor" href="#studies">Studies</a></button>
                             </li>
                             <li className="nav-item pe-2">
-                                <a className="nav-link myTextColor" href="#projects">Projects</a>
+                            <button className='bg-transparent border-0 p-0' data-bs-dismiss="offcanvas"><a className="nav-link myTextColor" href="#projects">Projects</a></button>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link myButtonStyle" href="#get-in-touch">Get in Touch</a>
+                            <button className='bg-transparent border-0 p-0' data-bs-dismiss="offcanvas"><a className="nav-link myButtonStyle" href="#get-in-touch">Get in Touch</a></button>
                             </li>
                         </ul>
                     </div>

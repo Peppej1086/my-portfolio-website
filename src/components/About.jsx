@@ -28,7 +28,7 @@ function About() {
                             By developing projects in WordPress, I have also gained extensive experience with the backend, especially in PHP.
                         </p>
                         <p>Now, going to work means having fun every day!</p>
-                        <div className="d-flex flex-row">
+                        <div className="AboutIconsContainer d-flex flex-row">
                             <div className="p-2 me-4">
                                 <a className="myLinkIcon" href="https://www.linkedin.com/in/giuseppe-rinaldi-2470a8211/" target="_blank" rel="noopener noreferrer">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" className="bi bi-linkedin" viewBox="0 0 16 16">
