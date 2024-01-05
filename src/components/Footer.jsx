@@ -4,7 +4,7 @@ function Footer(){
             <div className="container">
                 <div className="row d-flex align-items-center">
                     <div className="col-12 col-md d-flex mobileViewport myTextColor">
-                        <p>&copy; 2023 Giuseppe Rinaldi - Web developer / All rights reserved.</p>
+                        <p>&copy; 2024 Giuseppe Rinaldi - Web developer / All rights reserved.</p>
                     </div>
                     <div className="col-12 col-md">
                     <div className="d-flex flex-row mobileViewportIcon">
