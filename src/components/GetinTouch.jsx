@@ -41,43 +41,43 @@ function GetinTouch() {
     };
 
     return (
-        <section id="get-in-touch" className="formSection d-flex align-items-center">
+        <section id="contattami" className="formSection d-flex align-items-center">
             <video autoPlay muted loop playsInline id="matrixVideo" >
                 <source src={matrix} type="video/mp4" />
             </video>
             <div className="form-container z-1">
                 <div className="d-flex justify-content-center mb-3">
-                    <h2 className="h1 castom-h myTextColor">Get in Touch</h2>
+                    <h2 className="h1 castom-h myTextColor">Get in Touch!</h2>
                 </div>
-                {submitted && <div className="alert alert-success" role="alert">Message sent successfully. Thank you!</div>}
+                {submitted && <div className="alert alert-success" role="alert">Messaggio inviato con successo, grazie mille!</div>}
                 <form noValidate ref={form} onSubmit={sendEmail}>
                     <div className="row">
                         <div className="col-12 col-md mb-3">
-                            <input type="text" name='firstName' value={formData.firstName} onChange={handleInputChange} className="form-control" placeholder="First name" aria-label="First name" id='FirstName' required />
-                            <div className="valid-feedback">Looks good!</div>
-                            <div className="invalid-feedback">Please enter your First Name</div>
+                            <input type="text" name='firstName' value={formData.firstName} onChange={handleInputChange} className="form-control" placeholder="Nome" aria-label="First name" id='FirstName' required />
+                            <div className="valid-feedback">Bene, continua così!</div>
+                            <div className="invalid-feedback">Per favore, inserisci il tuo nome.</div>
                         </div>
                         <div className="col-12 col-md mb-3">
-                            <input type="text" name='lastName' value={formData.lastName} onChange={handleInputChange} className="form-control" placeholder="Last name" aria-label="Last name" id='LastName' required />
-                            <div className="valid-feedback">Looks good!</div>
-                            <div className="invalid-feedback">Please enter your Last Name</div>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col-12 col-md mb-3">
-                            <input type="email" name='email' value={formData.email} onChange={handleInputChange} className="form-control" placeholder="Email" id="inputEmail" autoComplete="email" required />
-                            <div className="valid-feedback">Looks good!</div>
-                            <div className="invalid-feedback">Please enter your E-mail</div>
+                            <input type="text" name='lastName' value={formData.lastName} onChange={handleInputChange} className="form-control" placeholder="Cognome" aria-label="Last name" id='LastName' required />
+                            <div className="valid-feedback">Bene, continua così!</div>
+                            <div className="invalid-feedback">Per favore, inserisci il tuo cognome.</div>
                         </div>
                     </div>
                     <div className="row">
                         <div className="col-12 col-md mb-3">
-                            <textarea type="text" name='message' value={formData.message} onChange={handleInputChange} className="form-control" placeholder="Write me a message!" id="textarea-message" />
+                            <input type="email" name='email' value={formData.email} onChange={handleInputChange} className="form-control" placeholder="E-mail" id="inputEmail" autoComplete="email" required />
+                            <div className="valid-feedback">Bene, continua così!</div>
+                            <div className="invalid-feedback">Per favore, inserisci la tua E-mail.</div>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-12 col-md mb-3">
+                            <textarea type="text" name='message' value={formData.message} onChange={handleInputChange} className="form-control" placeholder="Scrivimi un messaggio!" id="textarea-message" />
                         </div>
                     </div>
                     <div className="row">
                         <div className="col-12 col-md">
-                            <button type="submit" className="btn myButtonStyle">Submit</button>
+                            <button type="submit" className="btn myButtonStyle">Invia</button>
                         </div>
                     </div>
                 </form>

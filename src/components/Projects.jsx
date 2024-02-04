@@ -3,7 +3,7 @@ import Donato from '../images/donatoRinaldi.png';
 
 function Projects() {
     return (
-        <section id="projects" className="myBgColor projectsSection">
+        <section id="progetti" className="myBgColor projectsSection">
             <div className="container">
                 <div className="row d-flex align-items-center">
                     <div className="col-12 col-md myTextColor">
@@ -19,9 +19,10 @@ function Projects() {
                         </div>
                     </div>
                     <div className="col-12 col-md myTextColor">
-                        <h2 className="h1 castom-h">Projects</h2>
+                        <h2 className="h1 castom-h">Progetti</h2>
                         <p className='mt-3 text-justify'>
-                        In the section dedicated to my personal projects, I am proud to present two websites that I have developed for people close to me: "Donato Rinaldi - Psychologist" and "Capovilla Construction Company". These sites have been developed with the utmost care and attention to detail, reflecting the specific needs of my clients. The website <a className='myLinkStyle' href="https://dottordonatorinaldi.it/" target='_blank' rel="noreferrer">"Donato Rinaldi - Psychologist"</a> was designed to offer a welcoming and professional interface, allowing patients to discover the services offered by the psychologist. On the other hand, <a className='myLinkStyle' href="https://impresacapovilla.it/" target='_blank' rel="noreferrer">"Capovilla Construction Company"</a> was designed to showcase the experience and competence of the company, with a gallery of completed projects and detailed information on the services offered. Both sites are examples of my commitment to creating customized web solutions that not only meet but exceed my clients' expectations.
+                            Nella sezione dedicata ai miei progetti personali, sono orgoglioso di presentare due siti web che ho sviluppato per persone a me vicine: "Donato Rinaldi - Psicologo" e "Impresa edile Capovilla".
+                            Questi progetti sono stati sviluppati con la massima cura e attenzione ai dettagli, riflettendo le specifiche esigenze dei miei clienti. Il sito web <a className='myLinkStyle' href="https://dottordonatorinaldi.it/" target='_blank' rel="noreferrer">"Donato Rinaldi - Psicologo"</a> è stato realizzato per offrire un'interfaccia accogliente e professionale, consentendo ai pazienti di scoprire i servizi offerti dallo psicologo. D'altro canto, <a className='myLinkStyle' href="https://impresacapovilla.it/" target='_blank' rel="noreferrer">"Impresa edile Capovilla"</a> è stato ideato per mettere in mostra l'esperienza e la competenza dell'azienda, con una galleria di progetti completati e informazioni dettagliate sui servizi offerti. Entrambi i siti sono esempi del mio impegno nella creazione di soluzioni web personalizzate che non solo soddisfano, ma superano le aspettative dei miei clienti.
                         </p>
                     </div>
                 </div>

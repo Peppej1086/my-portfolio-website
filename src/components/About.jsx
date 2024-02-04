@@ -17,17 +17,15 @@ function About() {
                     <div className="col-12 col-md myTextColor">
                         <h2 className="h1 castom-h">About</h2>
                         <h3 className="mt-3">Hello World!</h3>
-                        <p className="text-justify">My Name is Giuseppe Rinaldi.<br />I have always had a great passion for programming, video games, and technology in general.
-                            In 2021, I decided to turn my passion into a job. I enrolled at <a className="myLinkStyle" href="https://epicode.com/" target="_blank" rel="noopener noreferrer">Epicode School</a>,
-                            then at <a className="myLinkStyle" href="https://www.sgd.de/" target="_blank" rel="noopener noreferrer">SGD Deutsche Fernschule</a>, and for almost two years,
-                            I studied and learned a lot about the world of programming, particularly HTML5, CSS3, JavaScript, Angular, and also acquired a solid foundation in React Js.
+                        <p className="text-justify">Mi chiamo Giuseppe Rinaldi.<br />Ho sempre avuto una grande passione per la programmazione, i videogiochi e la tecnologia in generale. Nel 2021, ho deciso di trasformare la mia passione in un lavoro. Ho frequentato la <a className="myLinkStyle" href="https://epicode.com/" target="_blank" rel="noopener noreferrer">Epicode School</a>,
+                            poi la <a className="myLinkStyle" href="https://www.sgd.de/" target="_blank" rel="noopener noreferrer">SGD Deutsche Fernschule</a>, e per quasi due anni ho studiato e appreso molto sul mondo della programmazione, in particolare HTML5, CSS3, JavaScript, Angular, e una solida base in React Js.
                         </p>
-                        <p className="text-justify">Since May 2022, I have been working at a digital company as a Frontend Developer.
-                            Here, I began my journey in the field of programming, continually learning something new. Additionally,
-                            I gained significant knowledge about the world of e-commerce, particularly with <a className="myLinkStyle" href="https://wordpress.com/" target="_blank" rel="noopener noreferrer">WordPress</a>, the world's most famous CMS.
-                            By developing projects in WordPress, I have also gained extensive experience with the backend, especially in PHP.
+                        <p className="text-justify">Da maggio 2022, lavoro in un'azienda digitale a Monaco di Baviera, come Frontend Developer.
+                            Qui, ho iniziato il mio percorso nel campo della programmazione, dove ho potuto mettere in pratica le mie conoscenze.
+                            Inoltre, ho avuto modo di approfondire il mondo dell'e-commerce, in particolare con <a className="myLinkStyle" href="https://wordpress.com/" target="_blank" rel="noopener noreferrer">WordPress</a>,
+                            il CMS più famoso al mondo. Sviluppando diversi progetti, ho anche acquisito una buona esperienza lato backend, in particolare con PHP.
                         </p>
-                        <p>Now, going to work means having fun every day!</p>
+                        <p>Ora, il mio lavoro significa divertirsi ogni giorno!</p>
                         <div className="AboutIconsContainer d-flex flex-row">
                             <div className="p-2 me-4">
                                 <a className="myLinkIcon" href="https://www.linkedin.com/in/giuseppe-rinaldi-2470a8211/" target="_blank" rel="noopener noreferrer">

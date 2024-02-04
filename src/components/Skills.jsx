@@ -14,21 +14,21 @@ import { ReactComponent as FileZillaIcon } from "../images/skills-icons/filezill
 
 function Skills() {
     return (
-        <section id="technology-skills" className="myBgColor skillsSection">
+        <section id="tecnologie" className="myBgColor skillsSection">
             <div className="container myTextColor">
                 <div className="d-flex justify-content-center mb-3">
-                    <h2 className="h1 castom-h">Technology & Skills</h2>
+                    <h2 className="h1 castom-h">Tecnologie & Skills</h2>
                 </div>
                 <div className="row d-flex">
                 <div className="col-12 col-md">
-                    <p className="text-justify first-justify-p">In my journey as a web developer, I've had the opportunity to acquire deep competence in a variety of technologies and skills. My experience extends from using fundamental languages like <a className="myLinkStyle" href="#html-icon">HTML</a> and <a className="myLinkStyle" href="#css-icon">CSS</a>, which form the basis of all my web projects, to more complex frameworks like <a className="myLinkStyle" href="#angular-icon">Angular</a> and <a className="myLinkStyle" href="#react-icon">React</a>, which allow me to build interactive and responsive web applications.
-                        I've augmented my expertise with <a className="myLinkStyle" href="#php-icon">PHP</a>, an essential server-side scripting language for dynamic web development. My mastery of <a className="myLinkStyle" href="#js-icon">JavaScript</a> plays a crucial role in this, enabling me to animate sites and applications with dynamic and engaging functionalities.
-                        Alongside front-end development, I've developed solid competencies in the CMS field, particularly with <a className="myLinkStyle" href="#wordpress-icon">WordPress</a>, which I use to create customized websites, from blogs to e-commerce platforms,</p>
+                    <p className="text-justify first-justify-p">Nel mio percorso come Web developer, ho avuto l'opportunità di acquisire profonde competenze in una varietà di tecnologie. La mia esperienza si estende dall'uso di linguaggi fondamentali come <a className="myLinkStyle" href="#html-icon">HTML</a> e <a className="myLinkStyle" href="#css-icon">CSS</a>, che formano la base di tutti i miei progetti web, a framework più complessi come <a className="myLinkStyle" href="#angular-icon">Angular</a> e <a className="myLinkStyle" href="#react-icon">React</a>, che mi permettono di costruire applicazioni web interattive e responsive.
+                    Ho migliorato la mia competenza con <a className="myLinkStyle" href="#php-icon">PHP</a>, un linguaggio di scripting lato server essenziale per lo sviluppo web dinamico. Le mie conoscenze in <a className="myLinkStyle" href="#js-icon">JavaScript</a> giocano un ruolo cruciale in questo, permettendomi di animare siti e applicazioni con funzionalità dinamiche e coinvolgenti.
+                    Accanto allo sviluppo Frontend, ho acquisito solide competenze nel campo dei CMS, in particolare con <a className="myLinkStyle" href="#wordpress-icon">WordPress</a>, che utilizzo per creare siti web personalizzati, da blog a piattaforme di e-commerce, supportati da <a className="myLinkStyle" href="#woo-icon">WooCommerce</a> per una</p>
                 </div>
                 <div className="col-12 col-md">
-                    <p className="text-justify">supported by <a className="myLinkStyle" href="#woo-icon">WooCommerce</a> for optimal online commerce management. My coding efficiency is further enhanced by using development tools like <a className="myLinkStyle" href="#vsc-icon">Vscode</a>, which optimizes my workflow, and <a className="myLinkStyle" href="#gh-icon">GitHub</a>,
-                        which I use for code management and collaboration with other developers. <a className="myLinkStyle" href="#fz-icon">FileZilla</a> has become an indispensable asset in my toolkit for its efficient file transfer capabilities via FTP.
-                        Moreover, I have strong competence in <a className="myLinkStyle" href="#boot-icon">Bootstrap</a>, which allows me to create responsive layouts compatible across all devices and browsers, significantly speeding up the front-end development process. This combination of advanced technologies and versatile skills enables me to tackle complex web projects with creativity and precision, ensuring high-quality results for every client.</p>
+                    <p className="text-justify">gestione ottimale del commercio online. La mia efficienza nel codice è ulteriormente migliorata dall'uso di strumenti di sviluppo come <a className="myLinkStyle" href="#vsc-icon">VScode</a>, che ottimizza il mio flusso di lavoro, e <a className="myLinkStyle" href="#gh-icon">GitHub</a>,
+                    che utilizzo per la gestione di progetti in collaborazione con altri programmatori. <a className="myLinkStyle" href="#fz-icon">FileZilla</a> è diventato uno strumento indispensabile nel mio kit per le sue capacità efficienti di trasferimento file tramite FTP.
+                    Inoltre, possiedo una forte competenza in <a className="myLinkStyle" href="#boot-icon">Bootstrap</a>, che mi permette di creare layout responsive compatibili con tutti i dispositivi e browser, velocizzando significativamente il processo di sviluppo Frontend. Questa combinazione di tecnologie avanzate e competenze versatili mi consente di affrontare progetti web complessi con creatività e precisione, garantendo risultati di alta qualità per ogni cliente.</p>
                 </div>
                 </div>
             </div>

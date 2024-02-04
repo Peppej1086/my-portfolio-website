@@ -37,16 +37,16 @@ function Navbar() {
                                 <button className='bg-transparent border-0 p-0' data-bs-dismiss="offcanvas"><a className="nav-link myTextColor" href="#about">About</a></button>
                             </li>
                             <li className="nav-item pe-2">
-                            <button className='bg-transparent border-0 p-0' data-bs-dismiss="offcanvas"><a className="nav-link myTextColor" href="#technology-skills">Technology & Skills</a></button>
+                            <button className='bg-transparent border-0 p-0' data-bs-dismiss="offcanvas"><a className="nav-link myTextColor" href="#tecnologie">Tecnologie & Skills</a></button>
                             </li>
                             <li className="nav-item pe-2">
-                            <button className='bg-transparent border-0 p-0' data-bs-dismiss="offcanvas"><a className="nav-link myTextColor" href="#studies">Studies</a></button>
+                            <button className='bg-transparent border-0 p-0' data-bs-dismiss="offcanvas"><a className="nav-link myTextColor" href="#studi">Studi</a></button>
                             </li>
                             <li className="nav-item pe-2">
-                            <button className='bg-transparent border-0 p-0' data-bs-dismiss="offcanvas"><a className="nav-link myTextColor" href="#projects">Projects</a></button>
+                            <button className='bg-transparent border-0 p-0' data-bs-dismiss="offcanvas"><a className="nav-link myTextColor" href="#progetti">Progetti</a></button>
                             </li>
                             <li className="nav-item">
-                            <button className='bg-transparent border-0 p-0' data-bs-dismiss="offcanvas"><a className="nav-link myButtonStyle" href="#get-in-touch">Get in Touch</a></button>
+                            <button className='bg-transparent border-0 p-0' data-bs-dismiss="offcanvas"><a className="nav-link myButtonStyle" href="#contattami">Contattami!</a></button>
                             </li>
                         </ul>
                     </div>
