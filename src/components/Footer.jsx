@@ -1,13 +1,39 @@
-function Footer(){
-    return(
+import { useEffect } from "react";
+
+function Footer() {
+
+    useEffect(() => {
+        // Funzione per caricare dinamicamente lo script di Iubenda
+        const loadIubendaScript = () => {
+            const script = document.createElement('script');
+            script.src = "https://cdn.iubenda.com/iubenda.js";
+            script.async = true;
+            document.body.appendChild(script);
+        };
+
+        // Carica lo script di Iubenda quando il componente viene montato
+        loadIubendaScript();
+
+        // Opzionale: pulizia quando il componente viene smontato
+        return () => {
+            // Rimuovi lo script se necessario o esegui altre operazioni di pulizia
+        };
+    }, []); // L'array vuoto assicura che l'effetto venga eseguito solo una volta al montaggio del componente
+
+
+    return (
         <section id="footer">
             <div className="container">
                 <div className="row d-flex align-items-center">
-                    <div className="col-12 col-md d-flex mobileViewport myTextColor">
-                        <p>&copy; 2024 Giuseppe Rinaldi - Web Developer / Tutti i diritti riservati.</p>
+                    <div className="col-12 col-md mobileViewport myTextColor">
+                        <p className="mb-3">&copy; 2024 Giuseppe Rinaldi - Web Developer / Tutti i diritti riservati.</p>
+                        <div>
+                            <a href="https://www.iubenda.com/privacy-policy/23562694" className="iubenda-white iubenda-embed" title="Privacy Policy">Privacy Policy</a>
+                            <a href="https://www.iubenda.com/privacy-policy/23562694/cookie-policy" className="iubenda-white iubenda-embed" title="Cookie Policy">Cookie Policy</a>
+                        </div>
                     </div>
                     <div className="col-12 col-md">
-                    <div className="d-flex flex-row mobileViewportIcon">
+                        <div className="d-flex flex-row mobileViewportIcon">
                             <div className="p-2 me-4">
                                 <a className="myLinkIcon" href="https://www.linkedin.com/in/giuseppe-rinaldi-2470a8211/" target="_blank" rel="noopener noreferrer">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" className="bi bi-linkedin" viewBox="0 0 16 16">

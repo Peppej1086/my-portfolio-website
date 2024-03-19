@@ -314,6 +314,7 @@ section {
 #footer .mobileViewportIcon {
   justify-content: end;
 }
+
 @media (max-width: 767px) {
   .mobileViewport, .mobileViewportIcon {
     justify-content: center !important;
