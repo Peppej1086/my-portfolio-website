@@ -79,7 +79,7 @@ function GetinTouch() {
                         <div className="col-12 col-md mb-3">
                             <div className='form-check'>
                             <input type="checkbox" name='privacyPolicy' className="form-check-input" id="privay-policy" required />
-                            <label className="form-check-label myTextColor" for="exampleCheck1"><p className='mb-0'>Ho letto l'informativa sulla <a href="https://www.iubenda.com/privacy-policy/23562694" target="_blank" rel="noopener noreferrer" className='myTextColor' title="Privacy Policy">Privacy Policy</a> e acconsento al trattamento dei miei dati.</p></label>
+                            <label className="form-check-label myTextColor" htmlFor="exampleCheck1"><p className='mb-0'>Ho letto l'informativa sulla <a href="https://www.iubenda.com/privacy-policy/23562694" target="_blank" rel="noopener noreferrer" className='myTextColor' title="Privacy Policy">Privacy Policy</a> e acconsento al trattamento dei miei dati.</p></label>
                             <div className="invalid-feedback">Per favore, leggi e accetta la Privacy Policy.</div>
                             </div>
                         </div>

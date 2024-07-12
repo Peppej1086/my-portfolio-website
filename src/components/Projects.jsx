@@ -1,28 +1,61 @@
 import Capovilla from '../images/impresaCapovilla.png';
 import Donato from '../images/donatoRinaldi.png';
+import Signorino from '../images/signorino.png';
 
 function Projects() {
     return (
         <section id="progetti" className="myBgColor projectsSection">
-            <div className="container">
-                <div className="row d-flex align-items-center">
-                    <div className="col-12 col-md myTextColor">
-                        <div className='capovillaContainer'>
-                            <a href="https://impresacapovilla.it/" target='_blank' rel="noreferrer">
-                                <img src={Capovilla} alt="Impresa Edile Capovilla" style={{ width: "50%", borderRadius: "8px" }} />
-                            </a>
-                        </div>
-                        <div className='donatoContainer'>
-                            <a className='d-flex justify-content-end' href="https://dottordonatorinaldi.it/" target='_blank' rel="noreferrer">
-                                <img src={Donato} alt="Donato Rinaldi Psicologo" style={{ width: "50%", borderRadius: "8px" }} />
-                            </a>
-                        </div>
+            <div className="mb-5 container myTextColor">
+                <div className="mb-3 text-center">
+                    <h2 className="h1 castom-h text-center">Progetti</h2>
+                </div>
+                <div className="d-flex justify-content-center">
+                    <p className='text-justify col-lg-8'>
+                        Nella sezione dedicata ai miei progetti personali, sono orgoglioso di presentare alcuni siti web che ho sviluppato per persone a me vicine. Questi progetti sono stati sviluppati con la massima cura e attenzione ai dettagli, sono esempi del mio impegno nella creazione di soluzioni web personalizzate che non solo soddisfano, ma superano le aspettative dei miei clienti.
+                    </p>
+                </div>
+            </div>
+            <div className='container mb-5'>
+                <div className="row d-flex">
+                    <div className="imgContainer col-12 col-md d-flex flex-column justify-content-center mb-3">
+                        <img src={Donato} style={{ width: "100%", borderRadius: "20px" }} alt="Donato Rinaldi Psicologo" />
                     </div>
-                    <div className="col-12 col-md myTextColor">
-                        <h2 className="h1 castom-h">Progetti</h2>
-                        <p className='mt-3 text-justify'>
-                            Nella sezione dedicata ai miei progetti personali, sono orgoglioso di presentare due siti web che ho sviluppato per persone a me vicine: "Donato Rinaldi - Psicologo" e "Impresa edile Capovilla".
-                            Questi progetti sono stati sviluppati con la massima cura e attenzione ai dettagli, riflettendo le specifiche esigenze dei miei clienti. Il sito web <a className='myLinkStyle' href="https://dottordonatorinaldi.it/" target='_blank' rel="noreferrer">"Donato Rinaldi - Psicologo"</a> è stato realizzato per offrire un'interfaccia accogliente e professionale, consentendo ai pazienti di scoprire i servizi offerti dallo psicologo. D'altro canto, <a className='myLinkStyle' href="https://impresacapovilla.it/" target='_blank' rel="noreferrer">"Impresa edile Capovilla"</a> è stato ideato per mettere in mostra l'esperienza e la competenza dell'azienda, con una galleria di progetti completati e informazioni dettagliate sui servizi offerti. Entrambi i siti sono esempi del mio impegno nella creazione di soluzioni web personalizzate che non solo soddisfano, ma superano le aspettative dei miei clienti.
+                    <div className="col-12 col-md myTextColor d-flex flex-column justify-content-center">
+                        <h4>
+                            <a className='myLinkStyle' href="https://dottordonatorinaldi.it/" target='_blank' rel="noreferrer">Donato Rinaldi - Psicologo</a>
+                        </h4>
+                        <p className='text-justify'>
+                            Il sito è stato realizzato per offrire un'interfaccia accogliente e professionale, consentendo ai pazienti di scoprire i servizi offerti dallo psicologo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div className='container mb-5'>
+                <div className="row d-flex flex-column-reverse flex-md-row">
+                    <div className="col-12 col-md myTextColor d-flex flex-column justify-content-center">
+                        <h4>
+                            <a className='myLinkStyle' href="https://impresacapovilla.it/" target='_blank' rel="noreferrer">Impresa Edile Capovilla</a>
+                        </h4>
+                        <p className='text-justify'>
+                            Questo progetto è stato ideato per mettere in mostra l'esperienza e la competenza dell'azienda, con una galleria di progetti completati e informazioni dettagliate sui servizi offerti.
+                        </p>
+                    </div>
+                    <div className="imgContainer col-12 col-md d-flex flex-column justify-content-center">
+                        <img src={Capovilla} style={{ width: "100%", borderRadius: "20px" }} alt="Impresa Edile Capovilla" />
+                    </div>
+                </div>
+            </div>
+            <div className='container'>
+                <div className="row d-flex">
+                    <div className="imgContainer col-12 col-md d-flex flex-column justify-content-center">
+                        <img src={Signorino} style={{ width: "100%", borderRadius: "20px" }} alt="Signorino Pizza" />
+                    </div>
+                    <div className="col-12 col-md myTextColor d-flex flex-column justify-content-center">
+                        <h4>
+                            <a className='myLinkStyle' href="https://signorinopizza.com.au/" target='_blank' rel="noreferrer">Signorino Pizza</a>
+                        </h4>
+                        <p className='text-justify'>
+                            Sito web per una pizzeria food truck a Melbourne che offre l'autentica pizza napoletana cotta in forno a legna. Con un focus su ingredienti freschi e di alta qualità, Signorino Pizza porta il sapore della tradizione italiana direttamente ai suoi clienti, combinando passione e autenticità in ogni fetta.
                         </p>
                     </div>
                 </div>

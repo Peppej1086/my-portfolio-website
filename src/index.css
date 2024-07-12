@@ -287,20 +287,11 @@ section {
     width: 100%;
   }
 }
-/*----Projects----*/
-.capovillaContainer {
-  margin-bottom: -40px;
-  margin-left: 40px;
-}
-.donatoContainer {
-  margin-right: 40px;
-}
-.capovillaContainer img, .donatoContainer img {
-  transition: all 0.5s;
-}
-.capovillaContainer a:hover img, 
-.donatoContainer a:hover img {
-  transform: scale(1.2);
+/*----Progetti----*/
+@media (max-width: 767px) {
+  #progetti .imgContainer {
+    margin-bottom: 1rem !important;
+  }
 }
 /*----Footer----*/
 #footer {

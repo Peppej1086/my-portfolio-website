@@ -16,8 +16,8 @@ function App() {
       <About />
       <Skills />
       <Studies />
-      <GetinTouch />
       <Projects />
+      <GetinTouch />
       <Footer />
     </>
   );
