@@ -10,9 +10,25 @@ import { ReactComponent as GhIcon } from "../images/skills-icons/github.svg";
 import { ReactComponent as VsCodeIcon } from "../images/skills-icons/file-type-vscode.svg";
 import { ReactComponent as BootIcon } from "../images/skills-icons/bootstrap.svg";
 import { ReactComponent as FileZillaIcon } from "../images/skills-icons/filezilla.svg";
-
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(useGSAP,ScrollTrigger);
 
 function Skills() {
+    useGSAP(() => {
+        gsap.from(".card", {
+            opacity:0,
+            y:20,
+            duration:2,
+            ease: "power3.out",
+            stagger:0.2,
+            scrollTrigger: {
+                trigger: ".card",
+                start: "top 70%"
+            }
+        });
+    });
     return (
         <section id="tecnologie" className="myBgColor skillsSection">
             <div className="container myTextColor">
@@ -32,9 +48,9 @@ function Skills() {
                 </div>
                 </div>
             </div>
-            <div className="container mt-4" id="html-icon">
+            <div className="container mt-4">
                 <div className="row">
-                    <div className="col-4 col-md-2 mb-4">
+                    <div className="col-4 col-md-2 mb-4" id="html-icon">
                         <div className="card" style={{ border: "3px solid #ECD06F" }}>
                             <div className="card-body d-flex justify-content-center align-items-center">
                                 <HtmlIcon />
