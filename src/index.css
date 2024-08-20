@@ -216,6 +216,30 @@ section {
     justify-content: center !important;
   }
 }
+@media (min-width: 768px) and (max-width: 1399px) {
+  .about-container .box {
+    width: 50vmin;
+    height: 50vmin;
+  }
+}
+@media (min-width: 1600px) {
+  .about-container {
+    height: 50vh;
+  }
+  .about-container .box {
+    width: 40vmin;
+    height: 40vmin;
+  }
+}
+@media (min-width: 2000px) {
+  .about-container {
+    height: 35vh;
+  }
+  .about-container .box {
+    width: 30vmin;
+    height: 30vmin;
+  }
+}
 /*----Skills----*/
 .skillsSection .card {
   aspect-ratio: 1 / 1;
